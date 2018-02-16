@@ -1,0 +1,128 @@
+.Navbar{
+  z-index: 99;
+  background:#292929;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.32);
+}
+
+.link:active{
+  position: relative;
+  top: 3px;
+}
+.brend{
+  color: #fff!important;
+  font-size: responsive 26px 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: 'Alice', serif;
+
+}
+.brend>span{
+  color: #deaee7;
+  font-family: 'Alice', serif;
+}
+@media(max-width: 575px){
+  .link{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 2px 0;
+    font-size: 16px;
+    color: #fff !important;
+
+  }
+ .link:hover{
+    background: rgba(255, 255, 255, 0.49) !important;
+    color: #fff!important;
+  }
+  .link{
+    transition:all .5s;
+    border:1px solid #fff;
+    padding: 1px 15px;
+    font-weight:700;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 2px 0 !important;
+    font-size: 16px !important;
+
+
+  }
+  .collapse{
+    text-align: center !important;
+  }
+
+}
+.link{
+  margin-right:25px;
+  font-size: responsive 10px 16px;
+  color: #fff;
+  font-weight:700;
+  position: relative;
+}
+
+.active1:after{
+  content: '';
+  border-bottom: 2px solid #deaee7;
+  padding: 0;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+li{
+  list-style-type: none;
+}
+.modallog{
+  color: #5f90dd;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+}
+a, a:hover,a:focus,a:active{
+  text-decoration: none;
+  outline: 0;
+}
+.formControl:focus{
+  border-color: rgba(95, 144, 221, 0.55);
+}
+.icon{
+  display: none;
+}
+@media(max-width: 575px){
+  .active1:after{
+    width: 0;
+  }
+  .icon{
+    vertical-align: middle;
+    color: #fff;
+    font-size: 25px;
+    float: left;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top:15px;
+  }
+
+}
+.brend>img{
+  max-width: 30px;
+  margin-right: 5px;
+}
+@media(min-width: 576px){
+  .collapse ul{
+    display: flex;
+    align-items: center;
+  }
+
+}
